@@ -10,7 +10,7 @@ html{
     padding: 5px 0px 5px 0px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 
@@ -29,12 +29,6 @@ html{
     object-fit: cover;
     width: auto;
     height: 100px;
-}
-
-
-nav li {
-    display: inline;
-    padding: 0 5rem;
 }
 
 h1, h2, h3, li, p {
@@ -84,12 +78,17 @@ li, p {
     justify-content: space-between;
     background-color: rgb(0, 0, 34);
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .title h1 {
     letter-spacing: 2px;
     font-size: 40px;
     text-align: right;
+    padding-right: 20px;
 }
 
 a {
@@ -116,4 +115,24 @@ td {
     font-size: 18px;
     padding: 1% 1%;
     text-align: center;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+.menu {
+    display: inline-block;
+    width: 250px;
+}
+
+.menu:hover, .project:hover {
+    background-color: whitesmoke;
+    opacity: 0.85;
+    border-radius: 10px;
+}
+
+.menu:hover > h3, .project:hover > h3 {
+    color:rgb(0, 0, 34);
 }
