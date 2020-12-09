@@ -6,6 +6,11 @@ html{
     background-color: black;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .projectList {
     padding: 5px 0px 5px 0px;
     width: 100%;
@@ -53,19 +58,25 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+h5 {
+    font-size: 16px;
+    padding: 0 7px;
+}
+
 #description {
     font-size: 13px;
 }
 
-li, p {
+p {
     font-size: 18px;
     line-height: 2;
 }
 
-#projects li{
-    padding-right: 35px;
-    list-style-type: none;
-}
 
 #projects, #aboutme {
     text-align: center;
@@ -81,39 +92,27 @@ li, p {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .title h1 {
     letter-spacing: 2px;
     font-size: 40px;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 200px;
 }
 
 a {
     text-decoration: none;
 }
 
+#resume {
+    font-weight: bold;
+    /* font-size: 22px; */
+    text-decoration: underline;
+}
+
 .skills {
-    text-align: center;
-}
-
-table {
-    margin: 4rem auto;
-    border: 1px solid whitesmoke;
-}
-
-th {
-    font-weight: bolder;
-    font-size: 22px;
-    color: whitesmoke;
-}
-
-td {
-    color: whitesmoke;
-    font-size: 18px;
-    padding: 1% 1%;
     text-align: center;
 }
 
@@ -124,7 +123,9 @@ main {
 
 .menu {
     display: inline-block;
-    width: 250px;
+    width: 200px;
+    position: relative;
+    left: 150px;
 }
 
 .menu:hover, .project:hover {
@@ -136,3 +137,36 @@ main {
 .menu:hover > h3, .project:hover > h3 {
     color:rgb(0, 0, 34);
 }
+
+.tech-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tech {
+    width: 300px;
+    height: 250px;
+    position: relative;
+}
+
+.tech-text {
+    background-color:whitesmoke;
+    border-radius: 5%;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 1s
+}
+.tech img {
+    max-width: 50%;
+    padding-top: 15%; 
+}
+
+.tech-text:hover {
+    opacity: 0.9;
+}
+
